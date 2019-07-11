@@ -51,7 +51,7 @@ cd getting-started
 python
 ```
 
-The following command in python executes the python program and keeps the results and the variables in memory for further use. This is similar to Matlab, where you run a .m script and the variables are kept in the workspace, where you can read or use them latter. 
+The following command in python executes the python program and keeps the results and the variables in memory for further use. This behaviour is similar to Matlab, in which you run a .m script and the variables are kept in the workspace, where you can read or use them latter. 
 
 ```python
 # Run Python program in the interpreter
