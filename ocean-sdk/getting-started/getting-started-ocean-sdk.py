@@ -1,5 +1,5 @@
 ##################################################
-# Instructions
+# INSTRUCTIONS
 ##################################################
 '''
 Runs the QUBO Algorithm for simulating a NOT gate on a local simulator (Ocean SDK).
@@ -48,7 +48,7 @@ Q = {('x', 'x'): -1, ('x', 'z'): 2, ('z', 'x'): 0, ('z', 'z'): -1}
 
 
 ##############################################
-# GET RESPONSE FROM SIMULATOR
+# GET ANSWER FROM SIMULATOR
 ##############################################
 
 
