@@ -2,15 +2,14 @@
 # Instructions
 ##################################################
 '''
-Runs the QUBO Algorithm for simulating a NOT gate on file 'qubo_not_gate.py'
-on a local simulator (Ocean SDK).
+Runs the QUBO Algorithm for simulating a NOT gate on a local simulator (Ocean SDK).
 
 Running this file on the Python Interpreter:
    01 - Open the virtual environment in which the Ocean SDK is installed
         >>> cd ~
         >>> source ocean/bin/activate
    01 - Run the following command in the interpreter
-        >>> exec(open('qubo_not_gate.py').read())
+        >>> exec(open('getting-started-ocean-sdk.py').read())
 
 The variables in these programs will be acessible in the interpreter.
 
@@ -28,7 +27,7 @@ Q = [ -1 ,  2 ;
 
 
 ##############################################
-# EXACT SOLVER
+# PREPARE THE COEFFICIENTS
 ##############################################
 
 # Import libraries
@@ -41,9 +40,16 @@ solver = dimod.ExactSolver()
 
 # Input QUBO coefficients
 Q = {('x', 'x'): -1, ('x', 'z'): 2, ('z', 'x'): 0, ('z', 'z'): -1}
-h = {'x': -1, 'z': -1}
-J = {('x', 'z'): 2}
+
+# Input Ising coefficients
+# h = {'x': -1, 'z': -1}
+# J = {('x', 'z'): 2}
 # J = {('x', 'z'): 1, ('z', 'x'): 1}
+
+
+##############################################
+# GET RESPONSE FROM SIMULATOR
+##############################################
 
 
 # Get response from Ising Solver
