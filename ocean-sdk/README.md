@@ -46,7 +46,7 @@ Next, you need to enter the Python Interpreter from inside the directory of your
 
 ```shell
 # Move to the directory of the python program
-cd getting-started
+cd My/python/program/directory
 # Enter the python interpreter
 python
 ```
@@ -55,6 +55,80 @@ The following command in python executes the python program and keeps the result
 
 ```python
 # Run Python program in the interpreter
+exec(open('my-python-program.py').read())
+```
+
+## Getting Started
+
+The program `getting-started-ocean-sdk.py` is a simple example of how to write a program using Ocean SDK. This program was written following an example in the Ocean SDK documentation: https://docs.ocean.dwavesys.com/en/latest/examples/not.html#not 
+
+### Purpose of the program
+Simulate the behaviour of a NOT gate.
+Classical simulation of a quantum algorithm for adiabatic quantum computation.
+
+### Operation principle 
+
+The NOT gate has a binary input `x` and a binary output `z` which is the negation of the input.
+
+![not-gate](images/not-gate.png)
+
+Source: https://docs.ocean.dwavesys.com/en/latest/examples/not.html#not
+
+The expected behaviour of the gate is given by the following table.
+
+![table-behaviour-not-gate](images/table-behaviour-not-gate.jpeg)
+
+We can translate this to a QUBO problem:
+
+![qubo-equation-not-gate](images/qubo-equation-not-gate.gif)
+
+The program uses Ocean SDK's classical simulator to solve this QUBO problem.
+
+### How to run the program
+Let's suppose the virtual environment is set up in the home directory and this whole GitHub repository is in Desktop.
+```shell
+# Move to the directory of the virtual environment
+# (often created inside the home directory)
+cd ~
+# Activate virtual environment
+source ocean/bin/activate
+# Move to the directory of the program
+cd Desktop/qc-tutorials/ocean-sdk/getting-started
+# Open Python interpreter
+python
+```
+Inside the Python Interpreter:
+
+```python
 exec(open('getting-started-ocean-sdk.py').read())
 ```
+
+### Expected output
+
+```python
+Energy and samples for the Hamiltonian:
+sample  |  energy
+{'x': 1, 'z': 0}  |  -1.0
+{'x': 0, 'z': 1}  |  -1.0
+{'x': 0, 'z': 0}  |  0.0
+{'x': 1, 'z': 1}  |  0.0
+
+
+Minimum energy solutions:
+{'x': 1, 'z': 0}  |  -1.0
+{'x': 0, 'z': 1}  |  -1.0
+```
+
+### Appendix: QUBO problems
+
+QUBO stands for _Quadratic Unconstrained Binary Optimization_ and a QUBO problem is:
+
+![qubo-equation](images/qubo-equation.gif)
+
+The QUBO coefficients `q_i` and `q_ij` can be stored in a matrix `Q` and the QUBO expression becomes:
+
+![qubo-equation-matrix](images/qubo-equation-matrix.gif)
+
+
+
 
