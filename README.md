@@ -1,5 +1,5 @@
 # Tutorials on Quantum Computing
 
-* Qiskit - IBM
-* Forest SDK - Rigetti
-* Ocean SDK - D-Wave
+* [Qiskit - IBM](qiskit)
+* [Forest SDK - Rigetti](forest-sdk)
+* [Ocean SDK - D-Wave](ocean-sdk)
