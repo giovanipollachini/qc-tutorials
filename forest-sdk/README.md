@@ -60,7 +60,7 @@ and in the other one, run:
 quilc -S
 ```
 
-Then you need to activate the virtual environment in which the Ocean SDK is installed.
+Then you need to activate the virtual environment in which the Forest SDK is installed.
 
 ```shell
 # Move to the directory of the virtual environment
