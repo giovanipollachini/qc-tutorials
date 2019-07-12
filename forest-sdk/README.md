@@ -20,7 +20,7 @@ source forest/bin/activate
 ```
 If you use an older version of python as default, you might need to specify a newer one when creating the virtual environment.
 ```shell
-# Create virtual environment named "fotest" with python version my-python-version
+# Create virtual environment named "forest" with python version my-python-version
 virtualenv forest --python=my-python-version
 ```
 
