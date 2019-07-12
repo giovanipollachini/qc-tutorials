@@ -34,7 +34,7 @@ pip install qiskit
 
 ## How to run a program (local simulation) on Python interpreter
 
-First you need to activate the virtual environment in which the Ocean SDK is installed.
+First you need to activate the virtual environment in which Qiskit is installed.
 
 ```shell
 # Move to the directory of the virtual environment
