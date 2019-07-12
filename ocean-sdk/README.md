@@ -105,7 +105,7 @@ exec(open('getting-started-ocean-sdk.py').read())
 
 ### Expected output
 
-```python
+```
 Energy and samples for the Hamiltonian:
 sample  |  energy
 {'x': 1, 'z': 0}  |  -1.0
