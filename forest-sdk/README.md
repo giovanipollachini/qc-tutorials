@@ -167,7 +167,7 @@ Using backend 2q-qvm and creating quantum circuit.
 Running the program on choosen backend.
 
 
-Result of the qubits:
+Results for the qubits in each shot:
 [q0 q1]
 [[0 0]
  [0 0]
